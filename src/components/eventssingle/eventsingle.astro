@@ -1,0 +1,1754 @@
+---
+import { json } from "react-router-dom";
+import Strength from "../Strength/strength.astro";
+import Schooldata from "./schooldata.json"
+
+const {location} = Astro.props
+
+let yoga = location === "yoga"
+let annual = location === "annual"
+let bloodday = location === "blooddonar"
+let evdays = location === "evdays"
+let carrer = location === "carrer"
+let parents = location === "parents"
+let quiz = location === "quiz"
+let games = location === "games"
+let karate = location === "karate"
+  
+---
+
+{ games && <section class="event-single"> 
+
+    { games && Schooldata &&  
+     Schooldata.map( (items)=> {
+                      return (
+                          <div class="event-banner">
+                             
+                             {
+                                 items.games.map((infrases)=> {
+                                     return (
+    
+                                     
+                                         <img src={infrases.building} alt="" />
+                                         
+                                     
+                                 
+    
+                                 
+                                     )
+                                 })
+                             }
+    
+                             {
+                                 items.games.map((infrases)=> {
+                                     return (
+    
+                                     <div class="container">
+         <div class="page-head">
+             <div class="blue fw600">
+                 <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+                 <h1 class="fw600 text-white"> {infrases.title} </h1>
+             </div>
+         </div>
+        </div>
+     
+                                         
+                                     
+                                 
+    
+                                 
+                                     )
+                                 })
+                             }
+    
+    
+    
+    
+    
+                             
+                          </div>
+                      )
+                  })  
+    
+        
+     
+    }
+    
+    
+    {   Schooldata &&  Schooldata.map( (items)=> {
+     return (
+        <div>
+    
+         {
+                items.games.map((infrases)=> {
+                    return (
+                        <div class="">
+                         <div class="container">
+     <div class="detail-div">
+         <div class="left-event">
+             <div class="kinder-image pb-8">
+                 <div class="big">
+                  <a href={infrases.one} data-fancybox="gallery">
+                     <img src={infrases.one} alt="">
+                  </a>
+           
+           
+                  
+                 </div>
+           
+                 <div class="row image-row pt-4 pb-5">
+           
+                   <div class="col-lg-5">
+                      <div class="bg-dark">
+                         <a href={infrases.two} data-fancybox="gallery">
+                             <img src={infrases.two}  alt="">
+                           </a>
+                      </div>
+                      <div class="bg-dark">
+                         <a href={infrases.three} data-fancybox="gallery">
+                             <img src={infrases.three}  alt="">
+                           </a>
+                      </div>
+                   </div>
+                   <div class="col-lg-5">
+                     <div class="bg-dark">
+                         <a href={infrases.four} data-fancybox="gallery">
+                             <img src={infrases.four}  alt="">
+                           </a>
+                      </div>
+                      <div class="bg-dark">
+                         <a href={infrases.five} data-fancybox="gallery">
+                             <img src={infrases.five}  alt="">
+                           </a>
+                      </div>
+                   </div>
+                   
+                  
+                </div>
+           
+               
+           
+                 
+              </div>
+         </div>
+         <div class="right-event">
+             <h6> Location</h6>
+    
+             <div>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+    
+             <div>
+                 <span class="material-symbols-outlined">
+                     location_on
+                     </span> Kanakpura
+             </div>
+    
+             <div> <span class="material-symbols-outlined">
+                 calendar_month
+                 </span> {infrases.date}</div>
+             
+         </div>
+     </div>
+    
+    
+    
+     <div>
+         <Strength/>
+     </div>
+    </div>
+                         </div>
+                    )
+                })
+            }
+         </div>
+            
+    
+    
+    
+    
+            
+        
+     )
+    })  
+    
+    }
+    
+    
+    
+    
+        </section>   }
+
+
+ { karate && <section class="event-single"> 
+
+{ karate && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.karate.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.karate.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.karate.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+
+{ quiz && <section class="event-single"> 
+
+    { quiz && Schooldata &&  
+     Schooldata.map( (items)=> {
+                      return (
+                          <div class="event-banner">
+                             
+                             {
+                                 items.semi.map((infrases)=> {
+                                     return (
+    
+                                     
+                                         <img src={infrases.building} alt="" />
+                                         
+                                     
+                                 
+    
+                                 
+                                     )
+                                 })
+                             }
+    
+                             {
+                                 items.semi.map((infrases)=> {
+                                     return (
+    
+                                     <div class="container">
+         <div class="page-head">
+             <div class="blue fw600">
+                 <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+                 <h1 class="fw600"> {infrases.title} </h1>
+             </div>
+         </div>
+        </div>
+     
+                                         
+                                     
+                                 
+    
+                                 
+                                     )
+                                 })
+                             }
+    
+    
+    
+    
+    
+                             
+                          </div>
+                      )
+                  })  
+    
+        
+     
+    }
+    
+    
+    {   Schooldata &&  Schooldata.map( (items)=> {
+     return (
+        <div>
+    
+         {
+                items.semi.map((infrases)=> {
+                    return (
+                        <div class="">
+                         <div class="container">
+     <div class="detail-div">
+         <div class="left-event">
+             <div class="kinder-image pb-8">
+                 <div class="big">
+                  <a href={infrases.one} data-fancybox="gallery">
+                     <img src={infrases.one} alt="">
+                  </a>
+           
+           
+                  
+                 </div>
+           
+                 <div class="row image-row pt-4 pb-5">
+           
+                   <div class="col-lg-5">
+                      <div class="bg-dark">
+                         <a href={infrases.two} data-fancybox="gallery">
+                             <img src={infrases.two}  alt="">
+                           </a>
+                      </div>
+                      <div class="bg-dark">
+                         <a href={infrases.three} data-fancybox="gallery">
+                             <img src={infrases.three}  alt="">
+                           </a>
+                      </div>
+                   </div>
+                   <div class="col-lg-5">
+                     <div class="bg-dark">
+                         <a href={infrases.four} data-fancybox="gallery">
+                             <img src={infrases.four}  alt="">
+                           </a>
+                      </div>
+                      <div class="bg-dark">
+                         <a href={infrases.five} data-fancybox="gallery">
+                             <img src={infrases.five}  alt="">
+                           </a>
+                      </div>
+                   </div>
+                   
+                  
+                </div>
+           
+               
+           
+                 
+              </div>
+         </div>
+         <div class="right-event">
+             <h6> Location</h6>
+    
+             <div>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+    
+             <div>
+                 <span class="material-symbols-outlined">
+                     location_on
+                     </span> Kanakpura
+             </div>
+    
+             <div> <span class="material-symbols-outlined">
+                 calendar_month
+                 </span> {infrases.date}</div>
+             
+         </div>
+     </div>
+    
+    
+    
+     <div>
+         <Strength/>
+     </div>
+    </div>
+                         </div>
+                    )
+                })
+            }
+         </div>
+            
+    
+    
+    
+    
+            
+        
+     )
+    })  
+    
+    }
+    
+    
+    
+    
+        </section>   }
+
+
+
+{ yoga && <section class="event-single"> 
+
+{ yoga && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.yoga.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.yoga.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.yoga.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+
+    { bloodday && <section class="event-single"> 
+
+{ bloodday && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.bloodday.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.bloodday.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.bloodday.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+
+    { carrer && <section class="event-single"> 
+
+{ carrer && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.carrer.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.carrer.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.carrer.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+
+
+
+    { evdays && <section class="event-single"> 
+
+{ evdays && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.evdays.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.evdays.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.evdays.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+
+    { parents && <section class="event-single"> 
+
+{ parents && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.parents.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.parents.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.parents.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+
+
+
+    { annual && <section class="event-single"> 
+
+{ annual && Schooldata &&  
+ Schooldata.map( (items)=> {
+                  return (
+                      <div class="event-banner">
+                         
+                         {
+                             items.annual.map((infrases)=> {
+                                 return (
+
+                                 
+                                     <img src={infrases.building} alt="" />
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+                         {
+                             items.annual.map((infrases)=> {
+                                 return (
+
+                                 <div class="container">
+     <div class="page-head">
+         <div class="blue fw600">
+             <a href="" class="orange fw600">Home</a> | <span>Events</span> 
+             <h1 class="fw600"> {infrases.title} </h1>
+         </div>
+     </div>
+    </div>
+ 
+                                     
+                                 
+                             
+
+                             
+                                 )
+                             })
+                         }
+
+
+
+
+
+                         
+                      </div>
+                  )
+              })  
+
+    
+ 
+}
+
+
+{   Schooldata &&  Schooldata.map( (items)=> {
+ return (
+    <div>
+
+     {
+            items.annual.map((infrases)=> {
+                return (
+                    <div class="">
+                     <div class="container">
+ <div class="detail-div">
+     <div class="left-event">
+         <div class="kinder-image pb-8">
+             <div class="big">
+              <a href={infrases.one} data-fancybox="gallery">
+                 <img src={infrases.one} alt="">
+              </a>
+       
+       
+              
+             </div>
+       
+             <div class="row image-row pt-4 pb-5">
+       
+               <div class="col-lg-5">
+                  <div class="bg-dark">
+                     <a href={infrases.two} data-fancybox="gallery">
+                         <img src={infrases.two}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.three} data-fancybox="gallery">
+                         <img src={infrases.three}  alt="">
+                       </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                 <div class="bg-dark">
+                     <a href={infrases.four} data-fancybox="gallery">
+                         <img src={infrases.four}  alt="">
+                       </a>
+                  </div>
+                  <div class="bg-dark">
+                     <a href={infrases.five} data-fancybox="gallery">
+                         <img src={infrases.five}  alt="">
+                       </a>
+                  </div>
+               </div>
+               
+              
+            </div>
+       
+           
+       
+             
+          </div>
+     </div>
+     <div class="right-event">
+         <h6> Location</h6>
+
+         <div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6176444494595!2d77.4179625!3d12.541469999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae5850a8044921%3A0x50a6630d74280f58!2sSt.%20Michel&#39;s%20English%20School%2C%20Kanakapura!5e0!3m2!1sen!2sin!4v1687281971942!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div>
+             <span class="material-symbols-outlined">
+                 location_on
+                 </span> Kanakpura
+         </div>
+
+         <div> <span class="material-symbols-outlined">
+             calendar_month
+             </span> {infrases.date}</div>
+         
+     </div>
+ </div>
+
+
+
+ <div>
+     <Strength/>
+ </div>
+</div>
+                     </div>
+                )
+            })
+        }
+     </div>
+        
+
+
+
+
+        
+    
+ )
+})  
+
+}
+
+
+
+
+    </section>   }
+    
+
+<style lang="scss" >
+
+  .event-single{
+    
+    .event-banner{
+       
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        height: 70vh;
+        // background: linear-gradient(#f5f4f417, #ececeecf);
+
+       
+
+        img{
+            width:100%;
+            position: absolute;
+            height: 100%;
+            object-fit: cover;
+            z-index: -77;
+            top: 0;
+            filter: brightness(50%);
+            left: 0;
+        }
+
+      
+       
+
+      
+    }
+
+    
+
+
+
+    .detail-div{
+        justify-content: flex-start;
+        display: flex;
+        
+        
+        gap: 2rem;
+        width: 100%;
+        
+        margin: 0 auto;
+        padding: 3rem 0;
+        
+
+        >:nth-child(1){
+            width: 70%;
+           
+            
+        }
+
+        >:nth-child(2){
+            width: 20%;
+            flex-direction: column;
+        gap: 1rem;
+        display:flex;
+            
+
+            h6{
+                margin: 0;
+                font-weight: 600;
+            }
+
+            >div{
+                width: 100%;
+                height: auto !important;
+                overflow: hidden;               border-radius: 20px;
+                display: flex;
+                font-weight: 600;
+                font-size: 15px;
+                // padding: 0.6rem;
+                
+                gap: 0.5rem;
+                // padding-top: 1rem;
+
+                span{
+                    color:var(--blue);
+                }
+                
+                iframe{
+                    width: 100%;
+                    border-radius: 20px;
+                    // height: 100%;
+                }
+            }
+            
+        }
+    }
+
+    .kinder-image{
+
+width: 100%;
+
+
+
+.big{
+width: 90%;
+// height: 500px
+margin: 0 auto;
+overflow: hidden;
+border-radius: 20px;
+// background-color: red;
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: var(--transition);
+
+
+    &:hover{
+        transform: scale(1.1);
+       
+    }
+}
+
+
+
+}
+
+.image-row{
+
+
+
+width: 80%;
+padding: 0;
+margin: 0 auto;
+
+
+gap: 1.6rem;
+justify-content: center !important;
+
+.col-lg-5{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap:2rem !important;
+   
+    
+
+    >div{
+          width:50%;
+          border-radius: 20px;
+          overflow: hidden;
+          cursor: pointer;
+        // a{
+        //     width: 100%;
+        //     height: auto;
+        //     background-color: yellow;
+
+            
+        // }
+
+        img{
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 20px;
+                object-fit:cover;
+            }
+
+
+    }
+
+    
+       
+
+    //     img{
+    //     width: 60% !important;
+        
+    //     border-radius: 20px;
+    //     transition: var(--transition);
+    //     // filter: saturate(80%);
+        
+
+
+    // &:hover{
+    //     transform: scale(1.06);
+    // }
+    // }
+    
+    
+   
+}
+
+.col-lg-2{
+// width: 10%;
+width: 210px;
+overflow: hidden !important;
+border-radius: 20px;
+
+padding: 0  !important;
+img{
+    width: 100% !important;
+    border-radius: 20px;
+    
+}
+}
+}
+
+div{
+display: flex;
+justify-content: center;
+}
+
+
+
+}
+}
+
+@media screen and (max-width: 1024px){
+
+.event-banner{
+    height: 40vh !important;
+}
+.detail-div{
+flex-direction: column !important;
+
+>:nth-child(1){
+    width: 100% !important;
+  
+    justify-content: center;
+    display: flex;
+}
+
+>:nth-child(2){
+    width: 100% !important;
+  
+    justify-content: center;
+    display: flex;
+}
+}   
+}
+
+@media screen and (max-width: 768px) {
+
+    .event-banner{
+        height: 40vh !important;
+    }
+ .detail-div{
+    flex-direction: column;
+
+    >:nth-child(1){
+        width: 100% !important;
+      
+        justify-content: center;
+        display: flex;
+    }
+
+    >:nth-child(2){
+        width: 100% !important;
+      
+        justify-content: center;
+        display: flex;
+    }
+ }   
+}
+
+
+@media screen and (max-width: 768px){
+    .event-banner{
+        min-width: 360px !important;
+    }
+}
+</style>

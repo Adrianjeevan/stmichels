@@ -1,0 +1,60 @@
+.activity {
+  padding-bottom: 4rem;
+}
+
+.activity-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+.activity-wrapper .holder {
+  width: 350px;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.119);
+}
+.activity-wrapper .holder .act-image {
+  width: 100%;
+}
+.activity-wrapper .holder .act-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.activity-wrapper .holder .act-contents {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.activity-wrapper .holder .act-contents h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.activity-wrapper .holder .act-contents p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  width: 95%;
+}
+.activity-wrapper .holder .act-contents a {
+  color: var(--orange);
+  transition: var(--transition);
+}
+.activity-wrapper .holder .act-contents a:hover {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=act.css.map */

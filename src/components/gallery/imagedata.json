@@ -1,0 +1,241 @@
+[
+  {
+    "infra" : [
+      
+        
+        {
+          "building" : "/School/School 02.jpg" 
+        },
+        {
+          "building" : "/School/School 03.jpg" 
+        },
+        {
+          "building" : "/School/School 04.jpg" 
+        },
+        {
+          "building" : "/School/School 05.jpg" 
+        },
+        {
+          "building" : "/School/School 06.jpg" 
+        },
+        {
+          "building" : "/School/School 07.jpg" 
+        },
+        {
+          "building" : "/School/School 08.jpg" 
+        },
+        {
+          "building" : "/School/School 09.jpg" 
+        },
+        {
+          "building" : "/School/School 010.jpg" 
+        },
+        {
+          "building" : "/School/School 011.jpg" 
+        },
+        {
+          "building" : "/School/School 012.jpg" 
+        },
+        {
+          "building" : "/School/School 013.jpg" 
+        },
+        {
+          "building" : "/School/school 14.JPG" 
+        },
+        {
+          "building" : "/School/school 15.JPG" 
+        },
+        {
+          "building" : "/School/school 16.JPG" 
+        }
+      
+    ],
+
+    "room" : [
+      
+      {
+        "building" : "/Class/Class 02.jpg" 
+      },
+      {
+        "building" : "/Class/Class 03.jpg" 
+      },
+      {
+        "building" : "/Class/Class 04.jpg" 
+      },
+      {
+        "building" : "/Class/Class 05.jpg" 
+      },
+      {
+        "building" : "/Class/Class 06.jpg" 
+      },
+      {
+        "building" : "/Class/Class 07.jpg" 
+      },
+      {
+        "building" : "/Class/Class 08.jpg" 
+      },
+      {
+        "building" : "/Class/Class 09.jpg" 
+      },
+      {
+        "building" : "/Class/Class 010.jpg" 
+      },
+      {
+        "building" : "/Class/Class 011.jpg" 
+      },
+      {
+        "building" : "/Chemistry lab/Chemistry lab 01.jpg" 
+      },
+     
+      {
+        "building" : "/Computer lab/computer lab 02.jpg" 
+      },
+      {
+        "building" : "/Computer lab/computer lab 03.jpg" 
+      },
+      {
+        "building" : "/Computer lab/computer lab 04.jpg" 
+      }
+      
+      
+    ],
+    "kinder" : [
+      {
+        "building" : "/kindergarden/Kindergarden 01.jpg" 
+      },
+      {
+        "building" : "/kindergarden/Kindergarden 02.jpg" 
+      },
+      {
+        "building" : "/kindergarden/Kindergarden 03.jpg" 
+      },
+      {
+        "building" : "/kindergarden/Kindergarden 04.jpg" 
+      },
+      {
+        "building" : "/kindergarden/Kindergarden 05.jpg" 
+      },
+      {
+        "building" : "/kindergarden/Kindergarden 06.jpg" 
+      }
+     
+      
+    ],
+    "library" : [
+      {
+        "building" : "/Library/library 01.jpg" 
+      },
+      {
+        "building" : "/Library/library 02.jpg" 
+      }
+      
+      
+    ],
+    "sports" : [
+      {
+        "building" : "/Sports/karate (1).jpg" 
+      },
+      {
+        "building" : "/Sports/karate (2).jpg" 
+      },
+      {
+        "building" : "/Sports/karate (3).jpg" 
+      },
+      {
+        "building" : "/Sports/Sports 01.jpg" 
+      },
+      {
+        "building" : "/Sports/Sports 02.jpg" 
+      },
+      {
+        "building" : "/Sports/Sports 03.jpg" 
+      },
+      {
+        "building" : "/Sports/Sports 04.jpg" 
+      },
+      {
+        "building" : "/Sports/Sports 05.jpg" 
+      },
+      {
+        "building" : "/Sports/Sports 06.jpg" 
+      }
+     
+      
+    ],
+    "school" : [
+      {
+        "building" : "/events/events 01.jpg" 
+      },
+      {
+        "building" : "/events/events 02.jpg" 
+      },
+      {
+        "building" : "/events/events 03.jpg" 
+      },
+      {
+        "building" : "/events/events 04.jpg" 
+      },
+      {
+        "building" : "/events/events 05.jpg" 
+      },
+      {
+        "building" : "/events/events 06.jpg" 
+      },
+      {
+        "building" : "/events/events 07.jpg" 
+      },
+      {
+        "building" : "/events/events 08.jpg" 
+      },
+      {
+        "building" : "/events/events 09.jpg" 
+      },
+      {
+        "building" : "/events/events 010.jpg" 
+      },
+      {
+        "building" : "/events/events 011.jpg" 
+      },
+      {
+        "building" : "/events/events 012.jpg" 
+      },
+      {
+        "building" : "/events/events 013.jpg" 
+      },
+      {
+        "building" : "/events/events 014.jpg" 
+      },
+     
+      {
+        "building" : "/events/events 017.jpg" 
+      },
+      {
+        "building" : "/events/events 018.jpg" 
+      },
+      {
+        "building" : "/events/events 019.jpg" 
+      },
+      {
+        "building" : "/events/events 02.jpg" 
+      },
+      {
+        "building" : "/events/events 021.jpg" 
+      },
+      {
+        "building" : "/events/events 022.jpg" 
+      },
+      {
+        "building" : "/events/events 023.jpg" 
+      }
+     
+      
+    ]
+  }
+
+  
+
+ 
+  
+  
+  
+]

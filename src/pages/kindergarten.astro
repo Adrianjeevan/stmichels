@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.jsx";
+import Banner from "../components/Banner/Banner.astro";
+import About from "../components/About/About.astro";
+import Board from "../components/About/Board.astro";
+import Teachers from "../components/About/teachers.astro";
+import Department from "../components/About/department.astro";
+import Banner1 from "../components/images/banners/Banner-01.png";
+import Footer from "../components/Footer/Footer.astro";
+import Kinder from "../components/kindergarten/kinder.astro";
+---
+
+<Layout title=" Best School for Kids, Nursery and Kindergarten - St.Michels English school">
+    <Header client:load />
+    <Banner title="Kindergarten" link="Course" image={Banner1} />
+    <Kinder />
+    <Footer />
+</Layout>

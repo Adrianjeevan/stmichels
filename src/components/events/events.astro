@@ -1,0 +1,346 @@
+---
+---
+
+<section class="events">
+  <div class="container">
+    <h6 class="title text-center pb-5 tab">
+      Upcoming <span>Events</span>
+    </h6>
+    <div class="row">
+      <div class="col-lg-5 d-flex">
+        <div>
+          <div class="title pb-5">
+            Upcoming <span>Events</span>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src="/School/School 02.jpg" alt="" data-aos="fade-down" />
+            <div class="figures color-accent-motion"></div>
+            <div class="figures f2 color-accent-motion"></div>
+          </div>
+          <div>
+            <img src="/Sports/sports 06.jpg" alt="" data-aos="fade-down" />
+            <img
+              src="/kindergarden/Kindergarden 05.jpg"
+              alt=""
+              data-aos="fade-up"
+            />
+            <div class="f3 color-accent-motion"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="event-tile" data-aos="fade-left">
+          <div class="">
+            <span class="material-symbols-outlined"> calendar_month</span> 12-01-2024
+          </div>
+          <a href="/event-detail"><p class="fw600"> Youth-Day celebration </p></a>
+          <div>
+            <span class="material-symbols-outlined"> location_on</span>
+            <a href="/event-detail">St.Michel's School</a>
+          </div>
+        </div>
+        <div class="left-div">
+          <div class="event-tile" data-aos="fade-left">
+            <div>
+              <span class="material-symbols-outlined"> calendar_month</span> 26-01-2024
+            </div>
+            <a href="/event-detail"
+              ><p class="fw600">
+               Republic-Day celebration
+              </p></a
+            >
+            <div>
+              <span class="material-symbols-outlined"> location_on</span>
+              <a href="">St.Michel's School</a>
+            </div>
+          </div>
+        </div>
+        <div class="event-tile" data-aos="fade-left">
+          <div>
+            <span class="material-symbols-outlined"> calendar_month</span> 05-02-2024
+          </div>
+          <a href="/event-detail">
+            <p class="fw600">Classwise photo session</p></a
+          >
+          <div>
+            <span class="material-symbols-outlined"> location_on</span>
+            <a href="">St.Michel's School</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .events {
+    padding: 6rem 0;
+
+    .tab {
+      display: none;
+    }
+    .row {
+      justify-content: space-between;
+
+      > :nth-child(1) {
+        // width: 100%;
+        padding: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // height: 500px;
+
+        gap: 2rem;
+        justify-content: center;
+
+        > :nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+          gap: 2rem;
+
+          .figures {
+            position: absolute !important;
+            bottom: 40px;
+            left: 40%;
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            background-color: orange;
+          }
+
+          .f2 {
+            bottom: 20% !important;
+            left: 20%;
+            height: 80px;
+            width: 80px;
+            border-radius: 80px;
+            background: linear-gradient(
+              90deg,
+              rgba(243, 116, 53, 0.785) 0%,
+              rgba(242, 121, 51, 0.843) 27%,
+              rgba(240, 128, 48, 0.787) 52%,
+              rgba(227, 183, 29, 1) 100%
+            );
+          }
+
+          div {
+            width: 280px;
+            height: 550px;
+
+            img {
+              width: 100%;
+              height: 70%;
+              object-fit: cover;
+              border-radius: 25px;
+            }
+          }
+
+          > :nth-child(2) {
+            height: 100%;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            gap: 1rem;
+            position: relative;
+
+            .f3 {
+              // bottom: 30% !important;
+              right: 0;
+              position: absolute;
+              top: 20%;
+              height: 60px;
+              width: 60px;
+              border-radius: 60px;
+              background-color: rgba(227, 184, 29, 0.694);
+            }
+
+            > :nth-child(1) {
+              height: 140px !important;
+              width: 160px !important;
+            }
+
+            > :nth-child(2) {
+              height: 45%;
+            }
+          }
+        }
+      }
+
+      > :nth-child(2) {
+        position: relative;
+        // background-color: red;
+
+        padding: 0;
+        // height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        // gap: 13rem !important;
+
+        .event-tile {
+          padding: 2rem 2rem;
+          border-radius: 20px;
+          width: 80%;
+          height: 200px;
+          background-color: white;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.076);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          font-size: 15px !important;
+
+          &:hover {
+            box-shadow: 0px 0px 15px 1px rgba(48, 177, 241, 0.501);
+          }
+        }
+
+        > :nth-child(2) {
+          // position: absolute;
+          // right: 0;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end !important;
+
+          .event-tile {
+            padding: 2rem 2rem;
+            border-radius: 20px;
+            width: 80%;
+            height: 200px;
+            background-color: white;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.076);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+            &:hover {
+              box-shadow: 0px 0px 15px 1px rgba(48, 177, 241, 0.501);
+            }
+          }
+        }
+
+        .event-tile {
+          p{
+            font-size: 20px;
+            color: var(--orange);
+
+            &:hover {
+              color: var(--orange);
+            }
+          }
+
+          * {
+            margin: 0;
+          }
+
+          > div {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            align-items: center;
+            gap: 1rem;
+            color: var(--blue) !important;
+            font-weight: 600;
+
+            span {
+              // color: var(--orange);
+              font-size: 18px;
+              background-color: rgba(5, 120, 235, 0.193);
+              padding: 0.4rem;
+              border-radius: 30px;
+              margin: 0;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .events {
+
+      .title{
+        display: block;
+      }
+      .row {
+        margin: 0 auto;
+        > :nth-child(1) {
+          display: none !important;
+        }
+
+        > :nth-child(2) {
+          justify-content: center !important;
+          align-items: center;
+          gap: 2rem !important;
+          width: 100%;
+
+          .event-tile {
+            // text-align: left !important;
+            width: 700px;
+            margin: 0 auto !important;
+          }
+
+          > :nth-child(2) {
+            justify-content: center !important;
+
+            .event-tile {
+              width: 700px !important;
+            }
+          }
+          div {
+            width: 100%;
+            text-align: center;
+
+            > div {
+              justify-content: center !important;
+              gap: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .events {
+      .row {
+        > :nth-child(1) {
+          display: none !important;
+        }
+
+        > :nth-child(2) {
+          .event-tile {
+            width: 320px;
+          }
+
+          > :nth-child(2) {
+            position: relative;
+
+            .event-tile {
+              width: 320px !important;
+            }
+          }
+          div {
+            width: 80%;
+            text-align: center;
+
+            > div {
+              justify-content: center !important;
+              gap: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

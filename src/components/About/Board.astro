@@ -1,0 +1,109 @@
+---
+import Individual from "./Boardindivdualcard.astro";
+import Member from "../images/aboutpage/members/basrkar.jpg";
+import Right from "../imageright/imageright.astro";
+import Left from "../imageleft/imageleft.astro";
+import Memberright from "./memberright.astro";
+import Memberleft from "./memberleft.astro";
+import Leftmember from "../sayings/Left";
+import Rightmember from "../sayings/right";
+import Anu from "../images/aboutpage/members/anu.jpg"
+import Veer from "../images/aboutpage/members/veerana.png"
+import Chaitra from "../images/aboutpage/members/chaitra.jpg"
+import Bharat from "../images/aboutpage/members/barath.jpg"
+import Vasantama from "../images/aboutpage/members/vasantama.jpg"
+---
+
+<section class="board">
+    <div class="container">
+        <h2 class="title text-center pb-5">
+            Our <span class="orange">Board members</span>
+        </h2>
+
+        <ul class="board-parent">
+            <li  data-aos="flip-up" 
+            
+            data-aos-duration="600">
+                <Individual
+                    image={Anu}
+                    title="Smt.Aunsuyadevi R.Srinivas "
+                    role="President of Devi Education School"
+                />
+            </li>
+            <li   data-aos="flip-down" 
+            
+            data-aos-duration="800">
+                <Individual
+                    image={Member}
+                    title="Sri.Bhaskar S "
+                    role="Secretary cum Treasurer"
+                />
+            </li>
+            <li  data-aos="flip-up" 
+            
+            data-aos-duration="1000">
+                <Individual
+                    image={Veer}
+                    title="Mr.G H Veeranna "
+                    role="Member of Devi Education Society"
+                />
+            </li>
+            <li  data-aos="flip-down" 
+            
+            data-aos-duration="1200">
+                <Individual
+                    image={Chaitra }
+                    title="Mrs.Chaitra H V "
+                    role="Member of Devi Education Society"
+                />
+            </li>
+            <li  data-aos="flip-up" 
+            
+            data-aos-duration="1300">
+                <Individual
+                    image={Bharat}
+                    title="Mr.Bharath H V"
+                    role="Member of Devi Education Society"
+                />
+            </li>
+        </ul>
+
+        <div class="sayings">
+            <h3 class="title text-center pb-5">
+                Checkout our <span>Board members Vision</span>
+            </h3>
+
+            <!-- <Leftmember title="Smt.Anusuyadevi R. Srinivas"  quote=' "\See others as you see yourself"\, "\ Differences arise to stimulate not to discourage"\. "\Education polishes good natures and correct bad ones"\.'  role="President of Devi Education School" position="" words="Greetings to all from Devi Education Society for the commencement of the new Academic year in our new school building. We provide all facilities to our students. I hope that no student shall find any difficulty to pursue the education in our school.Parents are required to take special care to send children in full Uniform everyday. All students must attend the morning prayer before the classes begin. Already we are well equipped with service oriented staff. Parents may approach them & solve all the matters at an earliest Parental care is needed regularly for the perfection in education. As home is the first school and mother the first teacher; I wish all mothers to help children learn the basic good qualities at home so that they obey the teacher in class. I WISH ALL OF YOU A VERY BRIGHT FUTURE." image={Member} client:load /> -->
+
+            <Leftmember
+                title="Smt.Anusuyadevi R. Srinivas"
+                quote='"\See others as you see yourself"\,"\ Differences arise to stimulate not to discourage"\. "\Education polishes good natures and correct bad ones"\.'
+                role="President of Devi Education School"
+                position=""
+                words="Greetings to all from Devi Education Society for the commencement of the new Academic year in our new school building. We provide all facilities to our students. I hope that no student shall find any difficulty to pursue the education in our school.Parents are required to take special care to send children in full Uniform everyday. All students must attend the morning prayer before the classes begin. Already we are well equipped with service oriented staff. Parents may approach them & solve all the matters at an earliest Parental care is needed regularly for the perfection ineducation. As home is the first school and mother the first teacher; I wish all mothers to help children learn the basic good qualities at home so that they obey the teacher in class. I WISH ALL OF YOU A VERY BRIGHT FUTURE."
+                image={Anu}
+                client:load
+            />
+
+            <Rightmember
+                title="Sri Bhaskar.S"
+                quote='"\An honest man is the noblest work Of God"\, "\Be swift to hear, slow to speak, slower to anger"\, "\When we educate ourselves we build the power to accomplish our goals"\."\Knowledge has bitter roots But sweet fruits"\.'
+                role="Secretary"
+                position=""
+                words="It is an honor to be here at St. Michel 's English School of all the Arts, Thanks to the hard work of caring parents, innovative educators and very committed students.I am here not only to congratulate everyone but also to uphold this school and students. We are going ahead with new ideas and advanced methods based on education in order to give our students the best possible chance in life. Weare the nation that has always understood our future is inextricably linked to the education of our children. I believe it is time to lead a new era of mutual responsibility in education. So let us all come together for the sake Of our children's success; A new era where each of us does our part to make that success a reality: Parents and teachers.This starts with fixing the promises that no child left behind his/her goals. I believe that the goals of this law are the right ones. My aim is to educate every child with excellent coaching with an advanced way of teaching. Our school will work hard and create a history in fulfilling the needs of our students"
+                image={Member}
+                client:load
+            />
+
+            <Leftmember
+                title="Smt.Vasanthamma k."
+                quote=' "\Knowledge is power"\. "\Information is liberating"\ . "\Education is the premise of progress,in every society, in every family"\.'
+                role="Head Mistress"
+                position="Msc, B.Ed"
+                words="At St.Michael's English School we are committed to create a caring and safe atmosphere which promotes emotional,social and academic development. We aim at nurturing our students into fine human beings by imparting quality education and inculcating human values.Our school motto 'Little deeds with great Love Guides our students to work in harmony with one another. We wish to instil them with a sense of social awareness and responsibility.Our effort is to teach them to take pride in their rich cultural heritage.We aspire to provide a creative environment,which is both stimulating and challenging.Children learn best through doing and we give ample opportunities to explore experiment and discover with hands on equipment and materials in an adult directed setting.The integrated curriculum we follow promote learning through music, art, dance, drama,activities, field trips and outdoor play. The Learning and development of the children is not confined to the classrooms but is extended to the external environment. This allows the children to explore their surroundings and exercise their imagination"
+                image="/staffs/vasantama.png"
+                client:load
+            />
+        </div>
+    </div>
+</section>

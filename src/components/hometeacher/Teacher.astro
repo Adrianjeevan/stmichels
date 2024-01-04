@@ -1,0 +1,67 @@
+---
+import Teacheerhomecard from "./teacheerhomecard.astro";
+import One from "../images/staffs/gundamma.jpg"
+import Two from "../images/staffs/nalini.jpg"
+import Three from "../images/staffs/susheela.jpg"
+
+---
+
+<section>
+    <div class="container">
+       <h5 class="title text-center">
+        Our Senior <span>Staffs</span>
+       </h5>
+
+
+       <ul class="teacher-slide-home">
+          <li data-aos="fade-up">
+            <Teacheerhomecard title="Mrs.Susheela K.V " role="PUC NTT, Senior Staff " image="/staffs/susheela.png" />
+          </li>
+          <li data-aos="fade-up">
+            <Teacheerhomecard title="Mrs.Gundamma K.T " role="PUC.Ded, Senior Staff" image="/staffs/gundama.png" />
+          </li>
+          <li data-aos="fade-up">
+            <Teacheerhomecard title="Smt.Nalini " role="PUC.Ded, Senior Staff "  image="/staffs/nalini.png" />
+          </li>
+       </ul>
+
+
+    </div>
+</section>
+
+
+<style lang="scss">
+  section{
+    padding: 5rem 0;
+  }
+
+.teacher-slide-home{
+  
+  padding-top: 3rem;
+  display:flex;
+  // padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+
+  li{
+    width: 300px;
+    
+    // border-radius: 25px;
+    overflow: hidden;
+  }
+  }
+
+
+
+
+  @media screen and (max-width: 425px) {
+    .teacher-slide-home{
+      flex-direction: column !important;
+        li{
+          margin: 0 auto !important;
+        }
+    }
+  }
+</style>

@@ -1,0 +1,20 @@
+---
+import Header from "../Header/Header";
+import Hero from "../Hero/Hero.astro";
+import "../Global/global.css";
+---
+
+<section class="head">
+  <div class="blue-bg"></div>
+
+  <Header client:load />
+  <Hero />
+</section>
+
+<style>
+  .head {
+    position: relative;
+
+    overflow: hidden;
+  }
+</style>

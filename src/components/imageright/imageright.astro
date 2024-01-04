@@ -1,0 +1,115 @@
+---
+import Round from "../Button/roundbtn.astro";
+import "./right.css";
+export interface Props {
+    title: string;
+    words: string;
+    image: string;
+    orange: string;
+}
+
+const { title, words, image, orange } = Astro.props;
+---
+
+<div class="row rightlayout">
+    <div class="col-lg-5" data-aos="flip-up">
+        
+        <h1 class="title">
+            {title}
+            <span class="orange">{orange}</span>
+        </h1>
+
+        <p class="words">
+            {words}
+        </p>
+
+        <div class="features">
+            <div class="skill">
+                <div class="create" data-aos="fade-right">
+                    <p>Creativity skills</p>
+                </div>
+            </div>
+            <div class="skill" data-aos="fade-right">
+                <div class="science"><p>Exact Sciences</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6" data-aos="fade-up">
+        <div class="figures color-accent-motion"></div>
+        <div class="figures f2 color-accent-motion"></div>
+        <div class="figures f3 color-accent-motion"></div>
+        <div>
+            <div class="big">
+                <!-- <img src="/School/School 09.jpg" alt=""> -->
+                <div class="one"></div>
+
+                <div class="two"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    initTilt("body", ".color-accent-motion");
+    let tiltSettings = [];
+    function initTilt(wrapper, elements) {
+        const $wrapper = $(wrapper);
+        const $elements = $(elements);
+        if ($wrapper.length < 1 || $elements.length < 1) {
+            return;
+        }
+
+        /** Init TweenMax  */
+        TweenMax.set([$elements], { transformStyle: "preserve-3d" });
+
+        /** Add event listeners fot tilt effect */
+        $wrapper.mousemove((e) => {
+            tilt(e.pageX, e.pageY, $wrapper, $elements);
+        });
+
+        /** Add event listeners fot mouse left */
+        $wrapper.mouseleave((e) => {
+            tilt(
+                $wrapper.width() / 2,
+                $wrapper.height() / 2,
+                $wrapper,
+                $elements
+            );
+        });
+    }
+
+    /**
+     * Shelly tilt
+     *
+     * @param cx
+     * @param cy
+     * @param $wrapper
+     * @param $elements
+     */
+    function tilt(cx, cy, $wrapper, $elements) {
+        const sxPos = ((cx / $wrapper.width()) * 100 - 50) * 2;
+        const syPos = ((cy / $wrapper.height()) * 100 - 50) * 2;
+        let elementsCounter = 0;
+
+        /** Separate animation for each element */
+        for (const $element of $elements) {
+            /** Set random tilt multiplier */
+            if (tiltSettings[elementsCounter] === undefined) {
+                tiltSettings[elementsCounter] =
+                    Math.floor(Math.random() * 25) * 0.01;
+            }
+
+            /** Apply effect */
+            TweenMax.to($element, 2, {
+                rotationY: -tiltSettings[elementsCounter] * sxPos,
+                rotationX: tiltSettings[elementsCounter] * syPos,
+                transformPerspective: 500,
+                transformOrigin: "center center 200",
+                ease: Expo.easeOut,
+            });
+
+            elementsCounter++;
+        }
+    }
+</script>

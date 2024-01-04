@@ -1,0 +1,52 @@
+---
+import "./wel.css";
+import icon1 from "../images/icons/teach.png";
+import icon2 from "../images/icons/graduation.png";
+import icon3 from "../images/icons/building.png";
+import icon4 from "../images/icons/call-agent.png";
+import Banner from "../images/circle/banner.png";
+import Image from "../images/kinder/k1.jpg";
+// import Round from '../'
+import Roundbtn from "../Button/roundbtn.astro";
+---
+
+<section class="welcome" data-aos="fade-up" >
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#fff" fill-opacity="0.7" d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,170.7C672,139,768,85,864,90.7C960,96,1056,160,1152,181.3C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      
+    <div class="container">
+        <h2 class="title text-center">
+            Welcome to <span class="orange"> St. Michel's</span>
+        </h2>
+
+        <p class="para pt-4">
+            Welcome to our prestigious English school, where excellence and
+            individuality converge. With a commitment to academic rigor and
+            personalized attention, we foster an environment where students can
+            truly shine.
+        </p>
+
+        <div class="row">
+            <div class="col-lg-3 wel text-center" data-aos="fade-up" >
+                <img src={icon2} alt="" />
+                <h4>Dedicated Faculty</h4>
+                <p>Empowering minds and shaping futures with a dedicated faculty committed to student success. </p>
+            </div>
+            <div class="col-lg-3 wel center" data-aos="fade-up" >
+                <img src={icon1} alt="" />
+                <h4>Best Educators</h4>
+
+                <p>Unlocking the potential within each student through the guidance of the best educators,</p>
+                <Roundbtn title="Learn More" link="/about"/>
+            </div>
+            <div class="col-lg-3 wel" data-aos="fade-up">
+                <img src={icon3} alt="" />
+                <h4>Great Facilities</h4>
+                <p>Unleashing possibilities with great facilities, providing an environment where students can thrive, explore, and excel.</p>
+            </div>
+            
+        </div>
+
+       
+    </div>
+</section>

@@ -1,0 +1,300 @@
+div .rightlayout {
+  padding-bottom: 5rem;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+div .rightlayout .figures {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: var(--lite-yellow);
+  top: -5%;
+  left: 50%;
+  z-index: 1;
+}
+div .rightlayout .f4 {
+  position: absolute;
+  top: 90% !important;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 60px;
+  background-color: rgba(255, 115, 0, 0.824) !important;
+}
+div .rightlayout img {
+  height: 600px !important;
+  object-fit: contain;
+}
+div .rightlayout .title {
+  font-size: 28px;
+}
+div .rightlayout .col-lg-5 {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+div .rightlayout .col-lg-5 .words {
+  width: 100%;
+  text-align: justify;
+}
+div .rightlayout .col-lg-5 .features {
+  width: 100%;
+  height: 100%;
+}
+div .rightlayout .col-lg-5 .features .science {
+  background-color: rgba(0, 128, 0, 0.579) !important;
+}
+div .rightlayout .col-lg-5 .features .create {
+  background-color: rgba(81, 19, 153, 0.773);
+  width: 90% !important;
+}
+div .rightlayout .col-lg-5 .features .skill {
+  width: 90%;
+  display: flex;
+  height: 100%;
+  margin-bottom: 1rem;
+  border-radius: 25px !important;
+  background-color: rgb(239, 239, 239);
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+}
+div .rightlayout .col-lg-5 .features .skill div {
+  width: 80%;
+  height: 100% !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  color: white;
+}
+div .rightlayout .col-lg-5 .features .skill div * {
+  margin: 0;
+}
+div .rightlayout .col-lg-6 {
+  position: relative;
+}
+div .rightlayout .col-lg-6 .figures {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: var(--lite-yellow);
+  top: -5%;
+  left: 50%;
+  z-index: 1;
+}
+div .rightlayout .col-lg-6 .f2 {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  top: 90% !important;
+  background-color: rgba(255, 119, 0, 0.803);
+  left: 40%;
+  z-index: 1;
+}
+div .rightlayout .col-lg-6 .f3 {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  top: 60% !important;
+  background-color: rgba(255, 166, 0, 0.758);
+  left: 90%;
+  z-index: 1;
+}
+div .rightlayout .col-lg-6 .twobig {
+  display: flex;
+  justify-content: flex-start;
+}
+div .rightlayout .col-lg-6 div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+div .rightlayout .col-lg-6 div .big {
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+  background-color: rgb(214, 196, 196);
+  position: relative;
+  background: url("/School/School 09.jpg") center/cover no-repeat;
+}
+div .rightlayout .col-lg-6 div .big:hover .one, div .rightlayout .col-lg-6 div .big:hover .two {
+  transform: scale(1.4);
+  background-color: red;
+}
+div .rightlayout .col-lg-6 div .big .one {
+  width: 150px;
+  height: 150px;
+  background-color: beige;
+  border-radius: 150px;
+  border: solid white 10px;
+  position: absolute;
+  top: 0;
+  transition: var(--transition);
+  background: url("/Class/Class 02.jpg") center/cover no-repeat;
+}
+div .rightlayout .col-lg-6 div .big .one2 {
+  background: url("/Galleryimages/two.jpg") center/cover no-repeat;
+}
+div .rightlayout .col-lg-6 div .big .two {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  border-radius: 100px;
+  border: solid white 10px;
+  position: absolute;
+  bottom: 110px;
+  left: -40px;
+  transition: var(--transition);
+  background: url("/School/School 05.jpg") center/cover no-repeat;
+}
+div .rightlayout .col-lg-6 div .big2 {
+  background: url("/kindergarden/k1.jpg") center/cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .reversing {
+    flex-direction: column-reverse !important;
+  }
+  .rightlayout {
+    text-align: center !important;
+    margin: 0 auto;
+    width: 100%;
+    gap: 5rem;
+  }
+  .rightlayout .btns {
+    display: flex;
+    justify-content: center;
+  }
+  .rightlayout .words {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .rightlayout .col-lg-5 {
+    width: 100%;
+  }
+  .rightlayout .col-lg-5 .features .skill {
+    width: 70% !important;
+    margin: 0 auto;
+  }
+  .rightlayout .col-lg-6 {
+    padding: 0 !important;
+    width: 100%;
+    text-align: center !important;
+  }
+  .rightlayout .col-lg-6 .f3 {
+    left: 70% !important;
+  }
+  .rightlayout .col-lg-6 > div {
+    justify-content: center !important;
+  }
+  .rightlayout .col-lg-6 img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .rightlayout .col-lg-6 .f3 {
+    left: 80% !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .reversing {
+    flex-direction: column-reverse !important;
+  }
+  .rightlayout {
+    width: 100% !important;
+    overflow: hidden;
+    gap: 5rem;
+    margin: 0 auto !important;
+  }
+  .rightlayout .words {
+    font-size: 15px !important;
+    text-align: center;
+    margin: 0 auto;
+    width: 85% !important;
+  }
+  .rightlayout .col-lg-5 {
+    width: 100%;
+    padding: 0 1rem !important;
+  }
+  .rightlayout .col-lg-5 .title {
+    font-size: 35px !important;
+    text-align: left;
+  }
+  .rightlayout .col-lg-5 .words {
+    text-align: left;
+    width: 100% !important;
+  }
+  .rightlayout .col-lg-5 .features .skill {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .rightlayout .col-lg-6 {
+    display: none;
+  }
+  .rightlayout .col-lg-6 .big {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .rightlayout .col-lg-6 .big .one {
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .rightlayout .col-lg-6 .big .two {
+    top: 150px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .reversing {
+    flex-direction: column-reverse !important;
+  }
+  .rightlayout {
+    width: 100% !important;
+    overflow: hidden;
+    gap: 5rem;
+    margin: 0 auto !important;
+  }
+  .rightlayout .words {
+    font-size: 15px !important;
+    text-align: center;
+    margin: 0 auto;
+    width: 100% !important;
+  }
+  .rightlayout .col-lg-5 {
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .rightlayout .col-lg-5 .title {
+    font-size: 35px !important;
+    text-align: left;
+  }
+  .rightlayout .col-lg-5 .words {
+    text-align: justify;
+    width: 100% !important;
+  }
+  .rightlayout .col-lg-5 .features .skill {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .rightlayout .col-lg-6 {
+    display: none;
+  }
+  .rightlayout .col-lg-6 .big {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .rightlayout .col-lg-6 .big .one {
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .rightlayout .col-lg-6 .big .two {
+    top: 150px !important;
+  }
+}
+
+/*# sourceMappingURL=right.css.map */

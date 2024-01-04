@@ -1,0 +1,32 @@
+.roundbtn {
+  width: auto;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: solid 2px var(--orange);
+  background-color: white;
+  color: var(--orange);
+  transition: var(--transition);
+}
+.roundbtn span {
+  font-size: 40px !important;
+}
+
+.roundbtn:hover {
+  background: linear-gradient(90deg, rgb(243, 115, 53) 0%, rgb(242, 120, 51) 27%, rgb(240, 128, 48) 52%, rgb(227, 183, 29) 100%);
+  transition: var(--transition);
+  color: white;
+}
+
+.roundbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.roundbtn a:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=button.css.map */

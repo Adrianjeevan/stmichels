@@ -1,0 +1,36 @@
+---
+export interface props {
+    title:string;
+    image:string;
+    role:string;
+    exp:string;
+    degree:string;
+}
+
+const {title,role, image, exp, degree} = Astro.props
+---
+
+
+    <div class="image-overlay">
+        <img src={image} alt="">
+       
+    </div>
+
+    <div>
+        <div class="section">
+            <div class="role">
+                {role} Section
+                </div>
+          </div>
+    
+      <div class="heading">
+        {title}
+       </div>
+       <div class="degree">
+       {degree}
+       </div>
+    
+      <div class="exp">
+        {exp}
+      </div>
+    </div>

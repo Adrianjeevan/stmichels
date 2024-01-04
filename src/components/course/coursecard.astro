@@ -1,0 +1,48 @@
+---
+import Button from "../Button/Button.astro"
+import Round from "../Button/roundbtn.astro"
+export interface Props {
+	title: string;
+    image : string;
+    words : string;
+    button : string;
+    link:string;
+}
+
+const { title, words, image, link } = Astro.props;
+---
+<div class="course-card">
+   <div class="one">
+    <img src={image} alt="">
+   </div>
+   <div class="two">
+    <div class="timings">
+        <div>
+            <span class="material-symbols-outlined">
+                calendar_month
+                </span> Mon - Fri
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                schedule
+                </span> 10am - 5pm
+        </div>
+    </div>
+    <hr/>
+    <div class="heading">{title}</div>
+    <div class="word">{words}</div>
+    <div>
+    <Round  title="Read More" link={link} />
+    </div>
+   
+   </div>
+
+
+</div>
+
+
+<style>
+    
+
+
+</style>

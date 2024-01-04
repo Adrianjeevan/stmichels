@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+// import Header from "../components/Header/Header"+
+import Banner from "../components/Banner/Banner.astro";
+import About from "../components/About/About.astro";
+import Board from "../components/About/Board.astro";
+import Teachers from "../components/About/teachers.astro";
+import Department from "../components/About/department.astro";
+import Banner1 from "../components/images/banners/new-banner.jpg";
+import Footer from "../components/Footer/Footer.astro";
+import Header from "../components/Header/Header.jsx";
+import Strength from "../components/Strength/strength.astro";
+import Wave from "../components/wave/wave.astro"
+---
+
+<Layout title="About us - St.Michels English school">
+    <Header client:load  width="768px" location="about" />
+    <Banner title="About" link="About" image={Banner1} />
+    <!-- <Wave/> -->
+    <About />
+    <Board />
+    <Teachers />
+    <Department />
+    <Strength />
+    <Footer />
+</Layout>
+
+
+

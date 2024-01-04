@@ -1,0 +1,30 @@
+---
+import "./aboutpage.css"
+export interface props {
+    title:string;
+    image:string;
+    role:string;
+
+}
+
+const {title, image, role } = Astro.props
+---
+
+<div class="board-card">
+
+    <div class="image">
+        <img src={image} alt="">
+    </div>
+    <div class="contents">
+        <p class="heading orange">
+            {title}
+
+            <p class="blue fw-600">
+                {role}
+            </p>
+          </div>
+         
+    </div>
+
+  
+</div>

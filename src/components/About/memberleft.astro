@@ -1,0 +1,62 @@
+---
+
+export interface props {
+    title:string;
+    image:string;
+    words:string;
+    role:string;
+    quote:string;
+}
+
+const { title, image, role, words, quote} = Astro.props
+---
+<style>
+  .height{
+  height: 700px !important;
+}
+</style>
+
+
+
+<script>
+  const btn = document.querySelector(".read");
+  const box = document.querySelector(".memberleft").classList;
+  
+  const onClick = ()=> {
+    console.log('clicked');
+  }
+  </script>
+
+<div class="member">
+    <div class="row memberleft">
+        
+        <div class="col-7 bg-light member-says">
+          <div class="contents">
+            <div class="heading">
+                {title}
+            </div>
+            <div class="role">
+             {role}
+            </div>
+          </div>
+          <div class="quote">
+            {quote}
+          </div>
+          <div class="words">
+    <p> {words} </p>
+          </div>
+        </div>
+
+
+        <div class="col-5 member-image-left">
+           <div> <img src={image} alt=""/></div>
+               </div>
+    </div>
+
+    <div class="text-center read mt-5">
+      <button >
+        {vdivision ? ('Show Less') : ('Show More') }
+        </button> 
+    </div>
+</div>
+

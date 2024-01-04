@@ -1,0 +1,216 @@
+---
+import Eventscards from "./event-card.astro";
+
+// const upcoming = true;
+---
+
+<section class="event-card">
+  <div class="container">
+    <ul>
+      <li>
+        <Eventscards
+          title="Youth Day celebration"
+          date="12-01-2024"
+          image="/eventsup/youth.jpg"
+          id="final"
+          link="/events"
+          upcoming={true} 
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Republic Day - 2024"
+          date="26-01-2024"
+          image="/eventsup/republic.jpg"
+          id="final"
+          link="/events"
+          upcoming={true} 
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Classwise photo session"
+          date="05-02-2024"
+          image="/high/high4.jpg"
+          id="final"
+          link="/events"
+          upcoming={true} 
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Childrens-day 2023"
+          date="16-11-2023"
+          image="/child (3).jpg"
+          id="final"
+          link="/childrens-day23"
+          upcoming={false} 
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Teachers Day - 2023"
+          date="05-09-2023"
+          image="/teach1.jpg"
+          id="final"
+          link="/events"
+          upcoming={false} 
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="76th Independence Day"
+          date="15-08-2023"
+          image="/indi (1).jpg"
+          id="final"
+          link="/independence-day23"
+          upcoming={false}
+        />
+      </li>
+        <li>
+            <Eventscards
+              title="Quiz Final"
+              date="12-08-2023"
+              image="/final (5).jpg"
+              id="final"
+              link="/quiz-finals"
+              upcoming={false}
+            />
+          </li>
+        
+        
+      <li>
+        <Eventscards
+          title="Shotokan Karate Championship"
+          date="06-08-2023"
+          image="/eventdatas/karates (3).jpeg"
+          id="karate"
+          link="/karate"
+          upcoming={false}
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Hobli Level Sports"
+          date="05-08-2023"
+          image="/eventdatas/games (3).jpeg"
+          id="games"
+          link="/sports-event"
+          upcoming={false}
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Quiz Semi Final"
+          date="04-08-2023"
+          image="/eventdatas/quiz (3).jpeg"
+          id="semi"
+          link="/quiz"
+          upcoming={false}
+        />
+      </li>
+     
+
+      <li>
+        <Eventscards
+          title="Yoga Day"
+          date="21-06-2023"
+          image="/eventdatas/yoga (1).JPG"
+          link="/yoga"
+          upcoming={false}
+          id="yogaday"
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Parents Orientation Program"
+          date="03-06-2023"
+          image="/eventdatas/parents (4).JPG"
+          link="/parents"
+          upcoming={false}
+          id="yogaday"
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Environment Day"
+          date="05-06-2023"
+          image="/eventdatas/evdays (1).JPG"
+          link="/environment"
+          upcoming={false}
+          id="yogaday"
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Blood Donar Day"
+          date="14-06-2023"
+          image="/eventdatas/bloodday (1).JPG"
+          link="/blooddonarday"
+          upcoming={false}
+          id="yogaday"
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Carrer Guidance day"
+          date="11-06-2023"
+          image="/eventdatas/carrer (1).JPG"
+          link="/carrer"
+          upcoming={false}
+          id="yogaday"
+        />
+      </li>
+      <li>
+        <Eventscards
+          title="Annual Day"
+          date="06-01-2023"
+          image="/events/events 01.jpg"
+          id="annual"
+          link="/events"
+          upcoming={false}
+        />
+      </li>
+
+      <!-- <li>
+            <Eventscards title="National Doctor day Celebration" date="01-07-2023" image="/eventsup/eventsp (3).JPG" link="/events" upcoming={true} id="yogaday" />
+            </li>
+            <li>
+                <Eventscards title=" School Level Sports Day " date="03-07-2023" image="/eventsup/eventsp (1).JPG" link="/events/annual" upcoming={true} id="yogaday" />
+            </li>
+            <li>
+                <Eventscards title="Essay Writing for High School" date="12-07-2023" image="/primary/p2.jpg" upcoming={true}  id="yogaday" />
+            </li>
+            <li>
+                <Eventscards title="Chess Competation" date="20-07-2023" image="/eventsup/eventsp (2).JPG" link="/events" upcoming={true} id="yogaday" />
+            </li>
+            <li>
+                <Eventscards title="Taluk Level Sports" date="24-07-2023" image="/Sports/Sports 01.jpg" link="/events" upcoming={true} id="yogaday" />
+            </li> -->
+    </ul>
+  </div>
+</section>
+
+<style lang="scss">
+  .event-card {
+    // background-color: red;
+    // padding: 4rem 0;
+    padding-bottom: 4rem;
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 1.5rem 1.5rem;
+      }
+    }
+  }
+</style>

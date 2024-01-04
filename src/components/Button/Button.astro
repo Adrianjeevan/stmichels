@@ -1,0 +1,15 @@
+---
+import "./button.css"
+export interface Props {
+	title: string;
+  
+}
+
+const { title } = Astro.props;
+---
+
+<div>
+    <a href="">
+        <button>  {title}</button>
+    </a>
+</div>

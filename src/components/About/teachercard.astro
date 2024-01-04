@@ -1,0 +1,33 @@
+---
+export interface props {
+    title:string;
+    image:string;
+    role:string;
+    words:string;
+}
+
+const { title, role , image, words } = Astro.props
+---
+
+<div class="teacher-card">
+  <div class="">
+    <div>
+        <img src={image} alt="">
+       </div>
+  </div>
+
+  <div class="">
+    <div>
+        <div class="heading">
+            {title}
+        </div>
+        <div class="role">
+            {role}, Senior Staff
+        </div>
+
+        <div class="words">
+       {words}
+        </div>
+       </div>
+  </div>
+</div>

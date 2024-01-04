@@ -1,0 +1,168 @@
+[
+    {
+      "games" : [
+        
+          
+        {
+          "building" : "/eventdatas/games (2).jpeg" ,
+          "one" : "/eventdatas/games (1).jpeg" ,
+          "two" : "/eventdatas/games (2).jpeg" ,
+          "three" :"/eventdatas/games (3).jpeg" ,
+          "four" :"/eventdatas/games (4).jpeg" ,
+          "five" :"/eventdatas/games (5).jpeg" ,
+           "title" :"Hobli Level Sports",
+           "date" :"05-08-2023"
+           
+        }
+        
+      
+    ],
+      "karate" : [
+        
+          
+        {
+          "building" : "/eventdatas/karates (3).jpeg" ,
+          "one" : "/eventdatas/karates (3).jpeg" ,
+          "two" : "/eventdatas/karates (1).jpeg" ,
+          "three" :"/eventdatas/karates (3).jpeg" ,
+          "four" :"/eventdatas/karates (4).jpeg" ,
+          "five" :"/eventdatas/karates (5).jpeg" ,
+           "title" :"Shotokan Karate National Championship",
+           "date" :"06-08-2023"
+           
+        }
+        
+      
+    ],
+      "semi" : [
+        
+          
+          {
+            "building" : "/eventdatas/quiz (2).jpeg" ,
+            "one" : "/eventdatas/quiz (3).jpeg" ,
+            "two" : "/eventdatas/quiz (4).jpeg" ,
+            "three" :"/eventdatas/quiz (5).jpeg" ,
+            "four" :"/eventdatas/quiz (2).jpeg" ,
+            "five" :"/eventdatas/quiz (2).jpeg" ,
+             "title" :"Quiz Competition Semi Final",
+             "date" :"04-08-2023"
+             
+          }
+          
+        
+      ],
+      "annual" : [
+        
+          
+          {
+            "building" :"/events/events 01.jpg" ,
+            "one" : "/events/events 02.jpg" ,
+            "two" : "/events/events 03.jpg" ,
+            "three" :"/events/events 07.jpg" ,
+            "four" :"/events/events 05.jpg" ,
+            "five" :"/events/events 014.jpg" ,
+             "title" :"Annual Day",
+             "date" :"06-01-2023"
+             
+          }
+          
+        
+      ],
+      "yoga" : [
+        
+          
+        {
+          "building" :"/eventdatas/yoga (3).JPG" ,
+          "one" : "/eventdatas/yoga (2).JPG" ,
+          "two" : "/eventdatas/yoga (3).JPG" ,
+          "three" :"/eventdatas/yoga (4).JPG" ,
+          "four" :"/eventdatas/yoga (5).JPG" ,
+          "five" :"/eventdatas/yoga (6).JPG" ,
+           "title" :"yoga Day",
+           "date" :"21-06-2023"
+           
+        }
+        
+      
+    ],
+    "bloodday" : [
+        
+          
+      {
+        "building" :"/eventdatas/bloodday (3).JPG" ,
+          "one" : "/eventdatas/bloodday (2).JPG" ,
+          "two" : "/eventdatas/bloodday (3).JPG" ,
+          "three" :"/eventdatas/bloodday (4).JPG" ,
+          "four" :"/eventdatas/bloodday (5).JPG" ,
+          "five" :"/eventdatas/bloodday (6).JPG" ,
+           "title" :"Blood Donar Day",
+           "date" :"14-06-2023"
+         
+      }
+      
+    
+  ],
+  "evdays" : [
+        
+          
+    {
+      "building" :"/eventdatas/evdays (3).JPG" ,
+        "one" : "/eventdatas/evdays (2).JPG" ,
+        "two" : "/eventdatas/evdays (3).JPG" ,
+        "three" :"/eventdatas/evdays (4).JPG" ,
+        "four" :"/eventdatas/evdays (5).JPG" ,
+        "five" :"/eventdatas/evdays (6).JPG" ,
+         "title" :"Environment Day",
+         "date" :"05-06-2023"
+       
+    }
+    
+  
+],
+"parents" : [
+        
+          
+  {
+    "building" :"/eventdatas/parents (1).JPG" ,
+      "one" : "/eventdatas/parents (2).JPG" ,
+      "two" : "/eventdatas/parents (3).JPG" ,
+      "three" :"/eventdatas/parents (4).JPG" ,
+      "four" :"/eventdatas/parents (2).JPG" ,
+      "five" :"/eventdatas/parents (1).JPG" ,
+       "title" :"Parent Orientation Day",
+       "date" :"03-06-2023"
+     
+  }
+  
+
+],
+"carrer" : [
+        
+          
+  {
+    "building" :"/eventdatas/carrer (1).JPG" ,
+      "one" : "/eventdatas/carrer (2).JPG" ,
+      "two" : "/eventdatas/carrer (3).JPG" ,
+      "three" :"/eventdatas/carrer (4).JPG" ,
+      "four" :"/eventdatas/carrer (5).JPG" ,
+      "five" :"/eventdatas/carrer (6).JPG" ,
+       "title" :"Carrer Guidance Day",
+       "date" :"11-06-2023"
+     
+  }
+  
+
+]
+  
+     
+    }
+
+   
+  
+    
+  
+   
+    
+    
+    
+  ]

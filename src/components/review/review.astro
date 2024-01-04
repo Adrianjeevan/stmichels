@@ -1,0 +1,36 @@
+---
+
+import "./review.css"
+import Cardreview from './reviewcard.astro'
+import Symbol from "../images/quote.png"
+
+
+
+---
+
+<section class="review">
+    <div class="container">
+
+        <h5 class="title orange text-center">
+            Testimonials
+        </h5>
+        
+        <ul class=" review-slider owl-carousel">
+
+           <li>
+            <Cardreview title="Neha R Gowda" words="The individual attention and care by the faculty in SMES to each student is highly Commendable I attended this school nearly a decade ago and have only great things to say about my experience. The teachers are amazing, the curriculum is second to none and each child is treated with care." image="/reviewers/neha.jpg" role=""   quote={Symbol}  />
+           </li>
+           <li>
+            <Cardreview title="Preetham M" words="I studied in st Michel's English school. According to me School Life is the best time of my life as I got  new friends. School time is the only time which I  enjoy most, and when I enter college, I  always miss my school life. School life teaches us lots of new things and prepares us to face all the challenges of life." image="/reviewers/PREETHAM M.jpeg"  role=""   quote={Symbol}  />
+           </li>
+           <li>
+            <Cardreview title="Jeevan H" words="I think whoever joins this school may not be passed out as a Rank student, but one will be well disciplined and empathize. It's been a 13 years of bonding with prestigious school. Got to learn enough behavioural skills through which lead me to continuously acquire knowledge. " image="/reviewers/JEEVAN H.jpeg"  role=""   quote={Symbol}  />
+           </li>
+           <li>
+            <Cardreview title="Mithun" words="I have studied 11 years in St Michael's English school from 2008-2019.I passed out in 2019.I spend 1 decade in this school.Many of my friends changed 1-2 schools to complete their schooling.but I haven't, because that atmosphere our school gave for me." image="/reviewers/mitun.jpg"  role=""   quote={Symbol}  />
+           </li>
+
+
+        </ul>
+    </div>
+</section>

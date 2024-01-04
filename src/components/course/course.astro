@@ -1,0 +1,59 @@
+---
+import "./cor.css";
+import Card from "./coursecard.astro";
+import kind from "/kindergarden/Kindergarden 04.jpg";
+import Primary from "/primary/p1.jpg";
+import High from "../images/class/class2.jpg";
+import College from "../images/class/Class1.jpg";
+import Bg from "../images//kinder/k6.jpg"
+import Roundbtn from "../Button/roundbtn.astro";
+---
+
+<section class="course" id="course">
+
+  <!-- <div class="course-bg ">
+   <img src={Bg} alt="">
+  </div> -->
+  <div class="container">
+
+    <h2 class="title text-center">
+        Our <span class="orange">Classes</span>
+    </h2>
+    <div class="sliders">
+      <!-- <div class="owl-nav"></div> -->
+      <div class="card-wrapper">
+        <Card
+          image={kind}
+          title="Kindergarten (Pre KG, LKG & UKG)"
+          words=" "
+          link="/kindergarten"
+        />
+      </div>
+      <div class="card-wrapper" data-aos="fade-up"
+      
+      >
+        <Card
+          image={Primary}
+          title="Primary School(1-7)"
+          words=""
+          link="/primary"
+        />
+      </div>
+      <div class="card-wrapper" data-aos="fade-up"
+     
+      >
+        <Card
+          image={High}
+          title="High School(8-10)"
+          words=""
+          link="/highschool"
+        />
+      </div>
+      
+    </div>
+
+    <!-- <div class="btn-div" data-aos="fade-up">
+      <Roundbtn title="classes" link="/kindergarten" />
+    </div> -->
+  </div>
+</section>

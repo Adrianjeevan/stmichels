@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.jsx";
+import Footer from "../components/Footer/Footer.astro";
+import Activities from "../components/extra/activities.astro";
+import Banner from "../components/Banner/Banner.astro";
+import Facility from "../components/extra/facility.astro";
+import Bannerimage from "../components/images/banners/Banner-04.png";
+---
+
+<Layout title="Well equipped school in kanakapura">
+    <Header client:load />
+    <Banner title="Facilities" image={Bannerimage} />
+
+    <Facility title="Facility" />
+    <Footer />
+</Layout>

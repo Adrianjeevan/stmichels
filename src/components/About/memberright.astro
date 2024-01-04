@@ -1,0 +1,77 @@
+---
+export interface props {
+    title:string;
+    image:string;
+    quote:string;
+    role:string;
+}
+
+const { title, image, role, quote, words} = Astro.props
+
+const heights = "height"
+const value = false
+
+
+
+---
+
+<style>
+  .height{
+  height: 700px !important;
+}
+</style>
+
+
+<script>
+  const btn = document.querySelector(".read");
+  const box = document.querySelector(".memberleft").classList;
+  
+   btn.addEventListener('click' , ()=> {
+       box.toggle("height");
+      console.log(box)
+  }) 
+  </script>
+
+
+<div class="member">
+    <div class="row memberleft">
+        <div class="col-5 bg-darkp  member-image">
+        <div><img src={image} alt=""></div>
+        </div>
+        <div class="col-7 member-says  bg-light">
+          <div class="contents">
+            <div class="heading p-0">
+                {title}
+            </div>
+            <div class="role">
+             {role}
+            </div>
+          </div>
+          <div class="quote">
+   {quote}
+          </div>
+          <div>
+            {words}
+          </div>
+
+         
+        </div>
+        
+       
+
+       
+      
+    </div>
+
+    <div class="text-center read pb-5">
+      <button>Read More</button> 
+    </div>
+
+
+    
+</div>
+
+
+  
+
+

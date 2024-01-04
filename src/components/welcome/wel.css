@@ -1,0 +1,108 @@
+.welcome {
+  position: relative;
+}
+.welcome .row {
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.welcome .row .center {
+  height: 400px !important;
+}
+.welcome .row .col-lg-3 {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-color: white;
+  padding: 2rem 1rem;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0px 0px 22px 1px rgba(3, 25, 39, 0.05);
+  transition: var(--transition);
+}
+.welcome .row .col-lg-3:hover {
+  box-shadow: 0px 0px 10px 2px rgba(13, 125, 199, 0.305);
+}
+.welcome .row .col-lg-3 h4 {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.welcome .row .col-lg-3 p {
+  margin: 0;
+}
+.welcome .row .col-lg-3 img {
+  height: 45px;
+  object-fit: contain;
+}
+.welcome .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .welcome .row {
+    justify-content: space-around !important;
+    gap: 2rem;
+  }
+  .welcome .row .center {
+    width: 250px !important;
+    height: 300px !important;
+  }
+  .welcome .row .col-lg-3 {
+    width: 250px !important;
+    height: 350px !important;
+  }
+}
+@media screen and (max-width: 820px) {
+  .welcome .title {
+    padding-top: 2rem;
+  }
+  .welcome .row {
+    justify-content: center !important;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .welcome .row .col-lg-3 {
+    width: 450px !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome .title {
+    padding-top: 2rem;
+  }
+  .welcome .row {
+    justify-content: center !important;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .welcome .row .col-lg-3 {
+    width: 450px !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .welcome .row {
+    justify-content: space-around !important;
+    gap: 2rem;
+  }
+  .welcome .row .center {
+    width: 500px !important;
+    height: 300px !important;
+  }
+  .welcome .row .col-lg-3 {
+    width: 300px !important;
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=wel.css.map */

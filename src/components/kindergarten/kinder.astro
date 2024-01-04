@@ -1,0 +1,124 @@
+---
+import './kinder.css'
+import K1 from "../images/kinder/k6.jpg"
+import K2 from '../images/kinder/k1.jpg'
+import K3 from '../images/kinder/k2.jpg'
+import K4 from '../images/kinder/k5.jpg'
+import K5 from '../images/kinder/k4.jpg'
+import Book from "../images/kinder/Book.png"
+import Pencil from "../images/kinder/pencil.png"
+
+import Kindercard from "./kindercard.astro"
+
+import Roundbtn from '../Button/roundbtn.astro'
+---
+
+
+<section class="kinder">
+   <div class="container">
+    <p class="title text-center pb-8">
+        Where young minds blossom through <span class="orange">play</span>,<span class="orange"> exploration</span>,and <span class="orange">early learning</span> experiences.
+   </p>
+
+   <div class="row kinder-highlights pb-8">
+    <div class="col-lg-3">
+        <img src="/whats1.jpeg" alt="">
+        <p class="heading">
+            Play-Based <br> Learning
+        </p>
+    </div>
+    <div class="col-lg-3">
+        <img src="/whats2.jpeg" alt="">
+        <p class="heading">
+            Parental <br> Involvement
+        </p>
+    </div>
+    <div class="col-lg-3">
+        <img src="/whats3.jpeg" alt="">
+        <p class="heading">
+            Safe and Nurturing Environment
+        </p>
+    </div>
+   
+   
+   </div>
+
+   <div class="kinder-image pb-8">
+      <div class="big">
+        <img src="/kindergarden/k3.jpg" alt="">
+
+
+       
+      </div>
+
+      <div class="row image-row pt-4 pb-5">
+
+        <div class="col-lg-5">
+            <img src="/kindergarden/k1.jpg"  alt="">
+            <img src="/kindergarden/k2.jpg" alt="">
+        </div>
+        <div class="col-lg-5">
+            <img src="/kindergarden/k4.jpg" alt="">
+            <img src="/kindergarden/k5.jpg" alt="">
+        </div>
+        
+       
+     </div>
+
+     <div class="text-center">
+        <Roundbtn title='Enroll Now' link="/contact"/>
+     </div>
+
+      
+   </div>
+
+    <div class="course-contents">
+        <p class="text-center pb-5">
+            A vibrant and nurturing space where young learners embark on an exciting educational journey, building a strong foundation in academics, social skills, and personal growth through engaging activities and play-based learning.
+        </p>
+
+        <div class="title text-center pb-5 pt-5">
+            Our <span>Kindergarten</span> Highlights
+        </div>
+
+       <ul class="pb-5" >
+        <li>
+            
+            <Kindercard  title="Play-Based Learning"  words=" Kindergarten prioritizes play as a valuable learning tool, allowing children to explore, experiment, and make discoveries in a hands-on and interactive environment. Play activities stimulate their cognitive, social, and emotional development. " image={Book}/>
+            
+            
+        
+        </li>
+       
+        <li> 
+            <Kindercard  title="Social and Emotional Development"  words=" Kindergarten focuses on fostering social skills, including sharing, taking turns, and cooperating with peers. It also promotes emotional development by nurturing self-awareness, empathy, and resilience, providing a supportive foundation for healthy relationships and positive self-esteem. " image={Book} />
+            
+            
+        
+        </li>
+        <li> 
+
+            <Kindercard  title="Early Literacy and Numeracy"  words=" Kindergarten introduces foundational literacy and numeracy skills through age-appropriate activities. Children engage in language-rich experiences, storytelling, phonics, and early reading and writing tasks. They also explore basic mathematical concepts, such as counting, sorting, and pattern recognition." image={Book} />
+           
+        </li>
+        <li>
+            <Kindercard  title="Creative Expression"  words="Kindergarten encourages children to express themselves creatively through art, music, movement, and imaginative play. These activities enhance their fine motor skills, stimulate imagination, and promote self-expression, fostering a lifelong appreciation for the arts." image={Book} />
+            
+            
+        </li>
+        <li>
+            <Kindercard  title="Transition to Primary School"  words="Kindergarten prepares children for the transition to primary education by cultivating a love for learning, building independence, and instilling a positive attitude toward school. It equips them with foundational skills and a curiosity for knowledge that will support their future academic success." image={Book} />
+            
+            
+        
+        </li>
+       </ul>
+
+       <p class="text-center">
+        Overall, kindergarten provides a well-rounded educational experience that prioritizes play, social-emotional development, early literacy and numeracy, creative expression, and smooth transition to primary school, setting the stage for lifelong learning.
+       </p>
+    </div>
+
+    <hr>
+   </div>
+</section>

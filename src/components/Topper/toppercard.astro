@@ -1,0 +1,27 @@
+---
+import "./topper.css"
+export interface Props {
+	title: string;
+	image: string;
+	marks: string;
+	percent: string;
+}
+
+const { title , image, marks, percent } = Astro.props;
+---
+
+<div class="topper-card" data-aos="fade-up" 
+data-aos-duration="400">
+   <div class="student">
+    <img src={image} alt="">
+   </div>
+    <div class="contents">
+        <div class="heading orange">
+            {title}
+         </div>
+         <div class="marks blue">
+     {marks} / 625 
+         </div>
+          {percent} %
+    </div>
+</div>

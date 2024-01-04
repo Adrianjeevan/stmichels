@@ -1,0 +1,535 @@
+.about-page {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  position: relative;
+}
+.about-page svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.board {
+  padding: 6rem 0;
+}
+
+.board-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch !important;
+  gap: 5rem;
+  padding-bottom: 8rem;
+  margin: 0 auto;
+}
+.board-parent li {
+  width: 300px !important;
+  height: 490px;
+}
+
+.board-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+.board-card:hover {
+  box-shadow: 0px 0px 15px 2px rgba(144, 203, 245, 0.316);
+}
+.board-card .image {
+  width: 100%;
+  height: 90%;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.board-card .image img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: fill;
+}
+.board-card .contents {
+  height: 35%;
+  text-align: center;
+}
+.board-card .contents .heading {
+  font-size: 18px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 900;
+}
+.board-card .contents .heading h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sayings {
+  padding-bottom: 2rem;
+}
+
+.member {
+  padding-top: 3rem;
+}
+.member .words {
+  font-size: 15px;
+  text-align: justify;
+}
+.member .heading {
+  font-size: 35px;
+  color: var(--orange);
+}
+.member .quote {
+  color: var(--blue);
+  font-weight: 600;
+  text-align: justify;
+}
+.member .role {
+  font-weight: 600;
+}
+.member .row {
+  align-items: stretch;
+  padding: 1rem;
+  border-radius: 25px;
+  height: 400px;
+  overflow: hidden;
+  backdrop-filter: blur(30px);
+  transition: var(--transition) !important;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.055);
+  align-items: stretch !important;
+}
+.member .row:hover {
+  box-shadow: 0px 0px 15px 2px rgba(111, 187, 238, 0.408);
+}
+.member .row .member-image {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+.member .row .member-image div {
+  width: 90%;
+  height: 100% !important;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.member .row .member-image div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.member .row .member-says {
+  padding: 1rem 1rem;
+  border-radius: 15px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.member-left {
+  align-items: stretch !important;
+}
+
+.member-image-left {
+  text-align: right !important;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0;
+}
+.member-image-left div {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.member-image-left div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teachers .title {
+  padding-bottom: 2rem;
+}
+
+.teacher-slide {
+  border-radius: 25px;
+  width: 100% !important;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.teacher-slide li {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  backdrop-filter: blur(40px);
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.055);
+}
+.teacher-slide li:hover {
+  box-shadow: 0px 0px 15px 2px rgba(115, 190, 233, 0.311);
+}
+.teacher-slide .teacher-card {
+  justify-content: space-between !important;
+  align-items: center;
+  display: flex;
+  width: 100% !important;
+  gap: 2rem;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+.teacher-slide .teacher-card > :nth-child(1) {
+  height: 100%;
+  width: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+.teacher-slide .teacher-card > :nth-child(1) div {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+.teacher-slide .teacher-card > :nth-child(1) div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.teacher-slide .teacher-card > :nth-child(2) {
+  width: 100%;
+}
+.teacher-slide .teacher-card > :nth-child(2) .heading {
+  color: var(--orange);
+  font-size: 30px;
+  font-weight: 600;
+}
+.teacher-slide .teacher-card > :nth-child(2) .words {
+  font-size: 16px;
+  text-align: justify;
+}
+.teacher-slide .teacher-card > :nth-child(2) .role {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.department-staff {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+.department-staff .department-wrapper {
+  padding-top: 3rem;
+}
+.department-staff ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.department-staff ul li {
+  width: 350px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  box-shadow: 0px 0px 0px 3px rgba(7, 7, 7, 0.035);
+}
+.department-staff ul li:hover {
+  box-shadow: 0px 0px 0px 3px rgba(143, 196, 243, 0.346);
+}
+.department-staff ul li .heading {
+  font-size: 25px;
+  color: var(--orange);
+}
+.department-staff ul li .degree {
+  font-size: 22px;
+  font-weight: 600;
+}
+.department-staff ul li .exp {
+  font-size: 16px;
+  font-weight: 600;
+}
+.department-staff ul li .role {
+  font-weight: 600;
+  color: var(--blue);
+}
+.department-staff ul li .image-overlay {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.department-staff ul li .image-overlay img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+.department-staff ul li > :nth-child(2) {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .member .row {
+    height: 540px;
+    margin: 0 auto;
+    width: 80%;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .member .row .heading {
+    font-size: 24px;
+  }
+  .member .row .member-image {
+    height: 80% !important;
+    width: 60%;
+    margin: 0 auto !important;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .member .row .member-image > div {
+    width: 100%;
+    height: 100% !important;
+    text-align: left !important;
+  }
+  .member .row .member-image > div img {
+    border-radius: 25px;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .member .row .member-says {
+    width: 100%;
+    height: 40% !important;
+    text-align: center;
+  }
+  .memberleft {
+    flex-direction: column-reverse !important;
+  }
+  .memberleft .member-image-left {
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 0 !important;
+    text-align: center;
+  }
+  .memberleft .member-image-left > div {
+    width: 100%;
+    height: 100%;
+  }
+  .memberleft .member-image-left img {
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .teacher-slide {
+    height: auto;
+    gap: 30px;
+  }
+  .teacher-slide li {
+    width: 400px !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+    padding: 1rem !important;
+  }
+  .teacher-slide li .teacher-card > :nth-child(1) {
+    width: 100% !important;
+  }
+  .teacher-card {
+    flex-direction: column;
+  }
+  .department-staff ul {
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .department-staff ul li {
+    width: 250px !important;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .department-staff ul li .image-overlay {
+    height: 60% !important;
+    overflow: hidden;
+    width: 100%;
+  }
+  .department-staff ul li .image-overlay img {
+    height: 100% !important;
+    object-fit: cover;
+  }
+  .department-staff ul li > :nth-child(2) {
+    padding: 1rem !important;
+  }
+  .department-staff ul li .heading {
+    font-size: 20px !important;
+  }
+  .department-staff ul li .section {
+    font-size: 21px;
+    font-weight: 600;
+    width: 100% !important;
+    color: white;
+  }
+  .department-staff ul li .exp,
+.department-staff ul li .degree {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .member .row {
+    width: 100%;
+    margin: 0 auto;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .member .row .words {
+    font-size: 15px !important;
+    width: 100% !important;
+  }
+  .member .row .heading {
+    font-size: 15px;
+    color: var(--orange);
+  }
+  .member .row .quote {
+    color: var(--blue);
+    font-weight: 600;
+  }
+  .member .row .role {
+    font-weight: 600;
+  }
+  .member .row .member-image {
+    height: 60%;
+    width: 60%;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .member .row .member-image > div {
+    margin: 0 auto;
+    height: 100% !important;
+  }
+  .member .row .member-image > div img {
+    height: 100% !important;
+  }
+  .member .row .member-says {
+    width: 100%;
+    height: 40% !important;
+  }
+  .memberleft {
+    flex-direction: column-reverse !important;
+  }
+  .memberleft .member-image-left {
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1.2rem;
+  }
+  .teachers {
+    display: none !important;
+  }
+  .teacher-slide li {
+    height: 700px;
+  }
+  .teacher-card {
+    flex-direction: column;
+  }
+  .teacher-card .words {
+    font-size: 15px !important;
+  }
+  .department-staff ul li {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about-page {
+    min-width: 350px !important;
+  }
+  .member .row {
+    width: 100%;
+    margin: 0 auto;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .member .row .words {
+    font-size: 15px !important;
+  }
+  .member .row .heading {
+    font-size: 15px;
+    color: var(--orange);
+  }
+  .member .row .quote {
+    color: var(--blue);
+    font-weight: 600;
+  }
+  .member .row .role {
+    font-weight: 600;
+  }
+  .member .row .member-image {
+    height: 60%;
+    width: 60%;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .member .row .member-image > div {
+    margin: 0 auto;
+    height: 100% !important;
+  }
+  .member .row .member-image > div img {
+    height: 100% !important;
+  }
+  .member .row .member-says {
+    width: 100%;
+    height: 40% !important;
+  }
+  .memberleft {
+    flex-direction: column-reverse !important;
+  }
+  .memberleft .member-image-left {
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1.2rem;
+  }
+  .teachers {
+    display: none !important;
+  }
+  .teacher-slide li {
+    height: 700px;
+  }
+  .teacher-card {
+    flex-direction: column;
+  }
+  .teacher-card .words {
+    font-size: 15px !important;
+  }
+  .department-staff ul li {
+    width: 300px !important;
+  }
+}
+
+/*# sourceMappingURL=aboutpage.css.map */

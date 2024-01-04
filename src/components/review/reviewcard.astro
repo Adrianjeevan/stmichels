@@ -1,0 +1,38 @@
+---
+
+export interface Props {
+  title: string;
+  role: string;
+  words: string;
+  image: string;
+  quote:string;
+}
+
+const { title, image, words, role, quote } = Astro.props;
+---
+
+
+<section class="review-div" data-aos="zoom-in" data-aos-offset="100"
+data-aos-duration="400">
+    <div class="wrapper">
+        <div class="overlay">
+            <img src={quote} alt="">
+        </div>
+        <div class="person">
+            <img src={image} alt="">
+        </div>
+        
+        <div class="contents">
+            <p class="heading orange m-0">
+                {title}
+            </p>
+           <p class="role blue m-0">
+            {role}
+           </p>
+            <p class="words">
+                {words}
+            </p>
+        </div>
+    </div>
+   
+</section>

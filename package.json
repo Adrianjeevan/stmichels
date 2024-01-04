@@ -1,0 +1,24 @@
+{
+  "name": "planetary-photon",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.2.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "aos": "^2.3.4",
+    "astro": "^2.4.1",
+    "gsap": "^3.12.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.13.0",
+    "sass": "^1.63.3"
+  }
+}

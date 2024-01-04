@@ -1,0 +1,24 @@
+---
+import "./button.css"
+
+import Arrow from "../images/left-arrow(1).png"
+import White from "../images/arrow-white.png"
+export interface Props {
+	title: string;
+    link: string;
+  
+}
+
+const { title,link } = Astro.props;
+---
+
+
+<div class="round" >
+    <a href={link}>
+       <button class="roundbtn">
+       
+        
+        {title}
+       </button>
+    </a>
+</div>

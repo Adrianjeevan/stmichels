@@ -1,0 +1,67 @@
+---
+import Act1 from "../images/activities/act1.jpg"
+import Act2 from "../images/activities/act2.jpg"
+import Act3 from "../images/activities/act3.jpg"
+import './act.css'
+import Roundbtn from "../Button/roundbtn.astro"
+import Highlightcard from "../highlightcard/highlightcard.astro"
+
+export interface Props {
+  title: string;
+  
+  
+}
+
+const { title } = Astro.props;
+---
+
+<section class="activity">
+    <div class="container">
+
+        <h2 class="title text-center pb-5">
+            Our <span>{title}</span>
+        </h2>
+        
+        <div class="activity-wrapper pt-5 pb-5">
+   
+            
+
+            <div class="holder">
+                <Highlightcard title="Great InfraStructure"  image="/School/School 02.jpg" words="Providing a conducive and modern environment with well-designed buildings, spacious classrooms, advanced technology, well-equipped laboratories, libraries, and recreational facilities to support effective teaching and learning." />
+            </div>
+            
+            <div class="holder">
+                <Highlightcard title="Spacious classrooms"  image="/Class/Class 03.jpg" words="Offering ample room for students to learn, collaborate, and engage in activities comfortably, providing an optimal learning environment that promotes focus, interaction, and creativity." />
+            </div>
+            
+            <div class="holder">
+                <Highlightcard title="Large and Separate play grounds" image="/Sports/Sports 02.jpg" words=" expansive outdoor spaces dedicated to play and physical activity, providing ample room for students to run, play sports, engage in recreational activities, fostering physical fitness, social interaction, and the joy of outdoor play in a safe and designated area." />
+            </div>
+            <div class="holder">
+                <Highlightcard title="Improvised Laboratory " image="/Chemistry lab/Chemistry lab 01.jpg" words=" Creating a dynamic and innovative learning space equipped with modern scientific instruments, tools, and resources, allowing students to engage in hands-on experiments, research, and practical applications" />
+            </div>
+            <div class="holder">
+                <Highlightcard title="Improvised Library " image="/Library/library 02.jpg" words=" Cultivating a vibrant and enriching learning hub with an extensive collection of books, digital resources, and multimedia materials, providing a welcoming space for students to explore literature, expand knowledge, enhance research skills." />
+            </div>
+            <div class="holder">
+                <Highlightcard title="Good Digital Services " image="/Class/Class 010.jpg" words=" Empowering students through disciplined training, physical fitness, self-defense techniques, and the development of character and resilience." />
+            </div>
+            <div class="holder">
+                <Highlightcard title="Online Class Recoding" image="/Class/Class 011.jpg" words=" Offering the convenience of recording and archiving online classes, ensuring that students can revisit and review the material at their own pace." />
+            </div>
+            <div class="holder">
+                <Highlightcard title="Facilitated With 3D Lab" image="/Class/Class 08.jpg" words=" The 3D lab fosters innovation, critical thinking, problem-solving, and hands-on learning experiences, preparing students for the future of technology and design." />
+            </div>
+            <div class="holder">
+                <Highlightcard title="CCTV surveillance 24/7" image="/School/School 010.jpg" words=" Ensuring the safety and security of the school premises with round-the-clock monitoring through closed-circuit television (CCTV) cameras. " />
+            </div>
+            
+            
+            
+           
+
+            
+        </div>
+    </div>
+
+</section>

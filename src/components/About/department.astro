@@ -1,0 +1,45 @@
+---
+import Staff from '../images/aboutpage/members/basrkar.jpg'
+import Departmentcard from "./departmentcard.astro"
+import S1 from "../images/aboutpage/members/gundama.png"
+import S2 from "../images/aboutpage/members/lakshmi.png"
+import S3 from "../images/aboutpage/members/madhu.png"
+import S4 from "../images/aboutpage/members/gulnaz.png"
+---
+
+
+<section class="department-staff">
+<div class="container">
+
+    <h4 class="title text-center">
+        Our <span class="orange"> Department Staffs</span>
+    </h4>
+   <div class="department-wrapper">
+    <ul class="department" >
+        <li data-aos="fade-up" 
+        
+        data-aos-duration="600">
+           <Departmentcard  title="Gundamma K.T" role="Book " image="/staffs/gundama.png" exp="33  years experience in Hindi" degree="P.U.C, D.Ed" />
+        </li>
+        <li data-aos="fade-up" 
+        
+        data-aos-duration="800">
+           <Departmentcard  title="Gulnaz.G" role="Uniform" image="/staffs/gulnaz.png" exp="18 years experience in English" degree="M.A, B.Ed" />
+        </li>
+        <li data-aos="fade-up" 
+        
+        data-aos-duration="1000">
+            <Departmentcard  title="Lakshmi.K" role="Admission" image="/staffs/lakshmi.png" exp="13 years experience in Social Science" degree="B.A, D.Ed" />
+         </li>
+        <li data-aos="fade-up" 
+        
+        data-aos-duration="600">
+           <Departmentcard  title="Madhu kumar B.V" role="Technical" image="/staffs/madhu.png" exp="10 years experience in Maths & English" degree="B.A, B.Ed " />
+        </li>
+       
+       
+       
+    </ul>
+   </div>
+</div>
+</section>

@@ -1,0 +1,68 @@
+---
+import Kinder from "../kindergarten/kinder.astro";
+import Kindercard from "../kindergarten/kindercard.astro";
+import Pencil from "../images/kinder/pencil.png"
+import Book from "../images/kinder/Book.png"
+import High1 from '../images/high/high1.jpg'
+import High2 from '../images/high/high2.jpg'
+import High3 from '../images/high/high3.jpg'
+import High4 from '../images/high/high4.jpg'
+import "./high.css"
+import Roundbtn from "../Button/roundbtn.astro";
+---
+
+
+<section class="highschool">
+    <div class="container">
+        <p class="title text-center pb-5">
+            A transformative journey of academics <span>growth</span> , <span>self-discovery</span> , and <span>preparation </span> for the future.
+        </p>
+
+       <div class="images-wrapper">
+        <div class="row highschool-images">
+            <div class="col-3">
+              <img src="/high/high1.jpg" alt="">
+            </div>
+            <div class="col-3">
+              <img src="/high/high2.jpg" alt="">
+            </div>
+            <div class="col-3">
+              <img src="/high/high3.jpg" alt="">
+
+            </div>
+              </div>
+
+        <div class="text-center btns pt-5">
+
+            <Roundbtn title="Enroll Now" link="/contact" />
+        </div>
+
+       </div>
+
+        <div class="course-contents">
+
+
+            <div class="title">
+                Our <span>HighSchool</span> Highlights
+            </div>
+            <ul class="">
+                <li>
+                    <Kindercard title="College and Career Preparation" words="High school provides resources and support for college and career planning. This includes guidance in college selection, SAT/ACT preparation, college applications, and exploring career options through internships, job shadowing, or vocational programs." image={Book} />      
+                </li>
+    
+                <li>
+                    <Kindercard title="Extracurricular Activities" words="High schools offer a wide range of extracurricular activities such as sports, clubs, performing arts, and community service. These activities promote personal growth, leadership skills, teamwork, and provide opportunities for students to explore their interests outside of the classroom." image={Book} />
+                </li>
+                <li>
+                    <Kindercard title="Personal Development" words="High school is a time for personal growth and self-discovery. Students develop independence, time management skills, and critical life skills such as problem-solving, decision-making, and effective communication. They also learn to navigate social relationships and become active members of their school and community." image={Book} />
+                </li>
+                <li>
+                    <Kindercard title="Guidance and Counseling" words="High schools provide guidance counselors who assist students with academic planning, college and career guidance, and personal support. They help students navigate challenges, set goals, and make informed decisions about their future paths." image={Book} />
+                </li>
+            </ul>
+    
+    </div>
+
+
+    </div>
+</section>

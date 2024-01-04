@@ -1,0 +1,128 @@
+---
+import "./hero.css";
+import Heros from "../images/circle/002.png";
+import Round from "../Button/roundbtn.astro";
+---
+
+<section class="hero">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="banner-txt" data-aos="fade-up">
+                    "Empowering <span>Minds</span>, Inspiring <span
+                        >Futures</span
+                    >"
+                </h1>
+
+                <div>
+                    <h5 data-aos="fade-up " class="banner-para">
+                        we strive to nurture well-rounded individuals who are
+                        equipped with the knowledge, skills, and values
+                        necessary to thrive in today's global society.
+                    </h5>
+                </div>
+
+                <div class="btns" data-aos="fade-up" data-aos-duration="900">
+                    <Round title="View Classes" link="#course" />
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="zoom-in">
+                <div>
+                    <div class="figures color-accent-motion"></div>
+                    <div class="figures f2 color-accent-motion"></div>
+                    <div class="figures f3 color-accent-motion"></div>
+                    <div class="figures f4 color-accent-motion"></div>
+
+                    <div class="round">
+                        <a href="/School/school 16.JPG" data-fancybox="gallery">
+                            <img src="/School/school 16.JPG" alt="" />
+                        </a>
+                    </div>
+                    <div class="second">
+                        <div class="round round-two">
+                            <a href="/School/school 15.JPG" data-fancybox="gallery">
+                                <img src="/School/school 15.JPG" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="round round-three">
+                        <a href="/School/school 14.JPG" data-fancybox="gallery">
+                            <img src="/School/school 14.JPG" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script>
+    initTilt("body", ".color-accent-motion");
+    let tiltSettings = [];
+    function initTilt(wrapper, elements) {
+        const $wrapper = $(wrapper);
+        const $elements = $(elements);
+        if ($wrapper.length < 1 || $elements.length < 1) {
+            return;
+        }
+
+        /** Init TweenMax  */
+        TweenMax.set([$elements], { transformStyle: "preserve-3d" });
+
+        /** Add event listeners fot tilt effect */
+        $wrapper.mousemove((e) => {
+            tilt(e.pageX, e.pageY, $wrapper, $elements);
+        });
+
+        /** Add event listeners fot mouse left */
+        $wrapper.mouseleave((e) => {
+            tilt(
+                $wrapper.width() / 2,
+                $wrapper.height() / 2,
+                $wrapper,
+                $elements
+            );
+        });
+    }
+
+    /**
+     * Shelly tilt
+     *
+     * @param cx
+     * @param cy
+     * @param $wrapper
+     * @param $elements
+     */
+    function tilt(cx, cy, $wrapper, $elements) {
+        const sxPos = ((cx / $wrapper.width()) * 100 - 50) * 2;
+        const syPos = ((cy / $wrapper.height()) * 100 - 50) * 2;
+        let elementsCounter = 0;
+
+        /** Separate animation for each element */
+        for (const $element of $elements) {
+            /** Set random tilt multiplier */
+            if (tiltSettings[elementsCounter] === undefined) {
+                tiltSettings[elementsCounter] =
+                    Math.floor(Math.random() * 25) * 0.01;
+            }
+
+            /** Apply effect */
+            TweenMax.to($element, 2, {
+                rotationY: -tiltSettings[elementsCounter] * sxPos,
+                rotationX: tiltSettings[elementsCounter] * syPos,
+                transformPerspective: 500,
+                transformOrigin: "center center 200",
+                ease: Expo.easeOut,
+            });
+
+            elementsCounter++;
+        }
+    }
+</script>

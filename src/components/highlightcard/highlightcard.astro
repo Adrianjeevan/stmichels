@@ -1,0 +1,95 @@
+---
+export interface Props {
+  title: string;
+  image:string;
+  words:string;
+  
+}
+
+const { title, words, image } = Astro.props;
+---
+
+<div class="act-image">
+
+
+    <div>
+        <img src={image} alt="">
+    </div>
+   
+    </div>
+
+    <div class="act-contents">
+     <h3>{title}</h3>
+     <p>{words}</p>
+
+     <a href="/contact">Enroll now  &rarr;</a>
+
+   
+
+
+    </div>
+
+
+    <!-- <style lang="scss">
+ .act-image{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+           
+            
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                // filter: brightness(50%);
+
+               
+            }
+        }
+
+        .act-contents{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.6rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:transparent;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+
+            h1{
+                font-weight: 600;
+                color: white;
+                margin: 0;
+                font-size: 30PX;
+            }
+
+            p{
+                color: white;
+                padding: 0;
+                margin: 0;
+                font-size: 16px;
+                width: 95%;
+            }
+
+            a{
+                color: var(--orange);
+                transition: var(--transition);
+
+                &:hover{
+                    margin-left: 10px;
+                }
+            }
+
+            
+        }
+    </style> -->

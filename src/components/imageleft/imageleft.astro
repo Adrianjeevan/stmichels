@@ -1,0 +1,42 @@
+---
+import "../imageright/right.css"
+export interface Props {
+  title: string;
+  words: string;
+  image: string;
+  orange:string;
+}
+
+const { title, words, image, orange } = Astro.props;
+---
+
+<div>
+    <div class="row rightlayout reversing">
+        <div class="col-lg-6" data-aos="fade-up" 
+       
+        data-aos-duration="600">
+        <div class="figures f4 color-accent-motion"></div>
+           <div class="twobig">
+            <div class="big big2">
+                
+                <div class="one one2 three" >
+                    
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="col-lg-5" data-aos="flip-down" 
+      
+        data-aos-duration="600">
+            <h2 class="title">
+                {title}
+                <span class="orange">{orange}</span>
+            </h2>
+
+            <div class="words">
+                {words}
+            </div>
+        </div>
+       
+    </div>
+</div>

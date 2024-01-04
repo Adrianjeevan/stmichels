@@ -1,0 +1,152 @@
+---
+import Round from "../Button/roundbtn.astro";
+---
+
+
+<section class="strength">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <p>
+                    Join us and stay tuned! 
+                </p>
+
+                <div>
+                    <Round title="Enroll Now" link="/contact"/>
+                </div>
+
+            </div>
+            <div class="col-lg-7">
+               <div>
+                <h2>900+</h2> <span>Students</span>
+               </div>
+               <div>
+                <h2>50+</h2> <span>Staffs</span>
+               </div>
+               <div>
+                <h2>30+</h2> <span>Awards</span>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+.strength{
+    padding: 5rem 0;
+    .row{
+        background: linear-gradient(0.25turn, #e06513, #f19708, #eba306);
+        justify-content: center;
+        padding: 4rem 0;
+        border-radius: 20px;
+
+        >:nth-child(1){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 4rem;
+            gap: 1rem;
+            align-items:flex-start;
+
+            p{
+                margin: 0 auto !important;
+                font-weight: 600;
+                font-size: 30px;
+            }
+        }
+
+        >:nth-child(2){
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: 600;
+            color: white;
+
+            h2{
+                font-weight: 900;
+                
+            }
+
+            >div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+        }
+    }
+}
+
+
+@media screen and  (max-width: 1024px) {
+    .strength{
+        .row{
+            gap: 3rem;
+            >:nth-child(1){
+                text-align: center !important;
+
+            >div{
+                display: flex;
+                justify-content: center;
+            }
+            }
+
+            >:nth-child(2){
+                justify-content: center !important;
+                gap: 6rem;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    .strength{
+        
+        .row{
+            gap: 3rem;
+            width: 90% !important;
+            margin: 0 auto !important;
+            >:nth-child(1){
+                width: 100%;
+                padding: 0;
+               
+                
+                text-align: center !important;
+
+            >div{
+                display: flex;
+                justify-content: center;
+            }
+            }
+
+            >:nth-child(2){
+                justify-content: center !important;
+                gap: 4rem;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 320px) {
+    .strength{
+        
+        .row{
+           
+            >:nth-child(1){
+                h2{
+                    font-size: 18px;
+                }
+
+          
+            }
+
+            >:nth-child(2){
+                
+                gap: 2rem;
+            }
+        }
+    }
+}
+</style>
